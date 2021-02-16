@@ -10,8 +10,7 @@ public class SimpleMovement : MonoBehaviour
     private CapsuleCollider m_Collider;
     private Rigidbody m_Rbody;
 
-    public LayerMask groundMask;
-    bool m_IsGrounded = true;
+    public bool m_IsGrounded = true;
 
     // Start is called before the first frame update
     void Start()
@@ -39,5 +38,10 @@ public class SimpleMovement : MonoBehaviour
             m_Rbody.velocity = new Vector3(0, m_JumpHeight, 0);
             m_IsGrounded = false;
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        m_IsGrounded = true;
     }
 }
