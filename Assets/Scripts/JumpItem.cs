@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class JumpItem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] float m_JumpMultiplier = 2f;
+    [SerializeField] float m_JumpTimer = 4f;
+
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.GetComponent<SimpleMovement>())
+        {
+            StartCoroutine(TempJumpBoost(other.GetComponent<SimpleMovement>()));
+
+            gameObject.GetComponent<Collider>().enabled = false;
+            gameObject.GetComponent<Renderer>().enabled = false;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator TempJumpBoost(SimpleMovement movement)
     {
-        
+        movement.JumpHeight *= m_JumpMultiplier;
+        yield return new WaitForSeconds(m_JumpTimer);
+        movement.JumpHeight /= m_JumpMultiplier;
+        Destroy(gameObject);
     }
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SimpleMovement : MonoBehaviour
 {
-    [SerializeField] float m_JumpHeight;
-    [SerializeField] float m_Speed;
+    [SerializeField] public float JumpHeight = 8f;
+    [SerializeField] float m_Speed = 3f;
 
     private CapsuleCollider m_Collider;
     private Rigidbody m_Rbody;
@@ -35,7 +35,7 @@ public class SimpleMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W) && m_IsGrounded == true)
         {
-            m_Rbody.velocity = new Vector3(0, m_JumpHeight, 0);
+            m_Rbody.velocity = new Vector3(0, JumpHeight, 0);
             m_IsGrounded = false;
         }
     }
