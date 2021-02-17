@@ -7,6 +7,8 @@ public class SimpleMovement : MonoBehaviour
     [SerializeField] public float JumpHeight = 8f;
     [SerializeField] float m_Speed = 3f;
 
+    Animator animator;
+
     private CapsuleCollider m_Collider;
     private Rigidbody m_Rbody;
 
@@ -17,6 +19,7 @@ public class SimpleMovement : MonoBehaviour
     {
         m_Collider = GetComponent<CapsuleCollider>();
         m_Rbody = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -33,15 +36,21 @@ public class SimpleMovement : MonoBehaviour
             m_Rbody.velocity = new Vector3(0, 0, -m_Speed);
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && m_IsGrounded == true)
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) && m_IsGrounded == true)
         {
             m_Rbody.velocity = new Vector3(0, JumpHeight, 0);
             m_IsGrounded = false;
+        }
+
+        if (m_IsGrounded == false)
+        {
+            animator.SetTrigger("IsJumping");
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         m_IsGrounded = true;
+        animator.ResetTrigger("IsJumping");
     }
 }
