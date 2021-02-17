@@ -7,7 +7,7 @@ public class Obstacle : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene(0);
+        InterfaceManager.instance.DeathScreen();
     }
 
 }
