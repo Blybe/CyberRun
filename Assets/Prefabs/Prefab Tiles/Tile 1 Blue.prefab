@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  snapLocation: -12.39
+  snapLocation: -45
 --- !u!1 &573223590867096450
 GameObject:
   m_ObjectHideFlags: 0

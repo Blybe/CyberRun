@@ -15,7 +15,7 @@ public class TileSpawner : MonoBehaviour
         if (spawnTime >= spawnTimer)
         {
             spawnTime = 0f;
-            Instantiate(Tiles[Random.Range(0, Tiles.Length)], new Vector3(20, spawnLocation.position.y, spawnLocation.position.z), spawnLocation.rotation);
+            Instantiate(Tiles[Random.Range(0, Tiles.Length)], new Vector3(spawnLocation.position.x, spawnLocation.position.y, spawnLocation.position.z), spawnLocation.rotation);
         }
     }
 }
