@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 447683457106305628}
   - component: {fileID: 2437163122808788630}
   - component: {fileID: 6199498910114257698}
+  - component: {fileID: 3186913528314617335}
   m_Layer: 0
   m_Name: Advertisement Board
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4238580502780229443}
-  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.73, y: 6.36, z: -25.17}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,6 +96,18 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8869600487021540830, guid: 694fa4714caa39e4da45e287482d5bd4, type: 3}
+--- !u!114 &3186913528314617335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238580502780229443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73af7d392b2dbbf4c851c5267d3d39f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
