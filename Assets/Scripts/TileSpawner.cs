@@ -6,7 +6,7 @@ public class TileSpawner : MonoBehaviour
 {
     [SerializeField] private float spawnTimer;
     private float spawnTime;
-    [SerializeField] private GameObject Tile;
+    [SerializeField] private GameObject[] Tiles;
     [SerializeField] private Transform spawnLocation;
 
     void Update()
@@ -15,7 +15,7 @@ public class TileSpawner : MonoBehaviour
         if (spawnTime >= spawnTimer)
         {
             spawnTime = 0f;
-            Instantiate(Tile, spawnLocation.position, spawnLocation.rotation);
+            Instantiate(Tiles[Random.Range(0, Tiles.Length)], spawnLocation.position, spawnLocation.rotation);
         }
     }
 }
