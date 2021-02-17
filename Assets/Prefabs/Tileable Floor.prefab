@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 8765986694231506505}
   - component: {fileID: 7404213619532832903}
   - component: {fileID: 2740077501034212522}
-  - component: {fileID: 4056675815778033827}
-  - component: {fileID: 38771098239701507}
   m_Layer: 0
   m_Name: Tileable Floor
   m_TagString: Untagged
@@ -64,34 +62,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.883848, y: 0.78579795, z: 12.030372}
-  m_Center: {x: 0.5845609, y: 0.2935273, z: 0.8217716}
---- !u!65 &4056675815778033827
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8765986694231506506}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.825322, y: 4.9467087, z: 12.010493}
-  m_Center: {x: 4.966003, y: 2.710414, z: 0.7930422}
---- !u!65 &38771098239701507
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8765986694231506506}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.3882395, y: 6.0754967, z: 12.034186}
-  m_Center: {x: -4.005075, y: 3.0264893, z: 0.844291}
+  m_Size: {x: 7.883848, y: 0.78579795, z: 11.611358}
+  m_Center: {x: 0.5845609, y: 0.2935273, z: 1.0312786}
 --- !u!1001 &8765986693978726280
 PrefabInstance:
   m_ObjectHideFlags: 0
