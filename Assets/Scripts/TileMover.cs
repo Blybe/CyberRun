@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TileMover : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    [SerializeField] public float speed = 15f;
     [SerializeField] private float snapLocation;
     private void Update()
     {  
