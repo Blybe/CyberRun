@@ -35,7 +35,8 @@ public class InterfaceManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.GetActiveScene();
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 
     public void GoToMenu()
