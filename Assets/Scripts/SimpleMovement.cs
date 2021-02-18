@@ -38,7 +38,7 @@ public class SimpleMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) && m_IsGrounded == true)
         {
-            m_Rbody.velocity = new Vector3(0, JumpHeight, 0);
+            m_Rbody.AddForce(new Vector3(0, JumpHeight, 0), ForceMode.Impulse);
             m_IsGrounded = false;
         }
 
@@ -52,5 +52,12 @@ public class SimpleMovement : MonoBehaviour
     {
         m_IsGrounded = true;
         animator.ResetTrigger("IsJumping");
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("SpeedBoost"))
+        {
+            TileSpeed.instance.ActivateSpeedBoost();
+        }
     }
 }

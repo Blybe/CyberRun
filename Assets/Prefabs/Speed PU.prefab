@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3652730149413823613}
   m_Layer: 0
   m_Name: Speed PU
-  m_TagString: Untagged
+  m_TagString: SpeedBoost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,8 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0635b2a18f73fe449dbc919378a7244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SpeedMulitplier: 2
-  m_SpeedTimer: 4
 --- !u!114 &2215298402211723424
 MonoBehaviour:
   m_ObjectHideFlags: 0

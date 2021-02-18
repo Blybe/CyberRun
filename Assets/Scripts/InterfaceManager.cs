@@ -28,7 +28,7 @@ public class InterfaceManager : MonoBehaviour
         Score = ScoreManager.instance.Score;
         Coins = CoinsManager.instance.Coins;
 
-        ScoreUI.text = "Score:" + Score;
+        ScoreUI.text = "Score:" + Mathf.RoundToInt(Score);
         CoinsUI.text = "Coins:" + Coins;
     }
 
