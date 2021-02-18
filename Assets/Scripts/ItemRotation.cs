@@ -9,6 +9,7 @@ public class ItemRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // rotate de items
         transform.Rotate(0f, turnSpeed, 0f);
     }
 }

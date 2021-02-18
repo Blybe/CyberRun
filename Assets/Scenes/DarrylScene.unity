@@ -1123,6 +1123,8 @@ MonoBehaviour:
   JumpHeight: 8
   m_Speed: 3
   m_IsGrounded: 1
+  Hitpoints: 0
+  MaxHitpoints: 3
 --- !u!136 &896746952
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1838,7 +1840,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 8542621057872586815}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 965eea11edffbd443a29368dd8585542, type: 3}
   m_Name: 
@@ -2131,10 +2133,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8542621056349515948, guid: ddff64f8655c0d948b633963ea00d65c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8542621056349515949, guid: ddff64f8655c0d948b633963ea00d65c, type: 3}
       propertyPath: ScoreUI
       value: 
       objectReference: {fileID: 134605908}
+    - target: {fileID: 8542621056349515949, guid: ddff64f8655c0d948b633963ea00d65c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8542621056349515949, guid: ddff64f8655c0d948b633963ea00d65c, type: 3}
       propertyPath: Deathscreenpanel
       value: 

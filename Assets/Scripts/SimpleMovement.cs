@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SimpleMovement : MonoBehaviour
 {
+    public static SimpleMovement instance;
+
     [SerializeField] public float JumpHeight = 8f;
     [SerializeField] float m_Speed = 3f;
 
@@ -14,12 +16,22 @@ public class SimpleMovement : MonoBehaviour
 
     public bool m_IsGrounded = true;
 
+    public int Hitpoints;
+    public int MaxHitpoints = 3;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         m_Collider = GetComponent<CapsuleCollider>();
         m_Rbody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+
+        Hitpoints = MaxHitpoints;
     }
 
     // Update is called once per frame
@@ -60,5 +72,22 @@ public class SimpleMovement : MonoBehaviour
         {
             TileSpeed.instance.ActivateSpeedBoost();
         }
+    }
+
+    private void ModifyHealth(int _hp)
+    {
+        // simpele health functie
+        Hitpoints += _hp;
+
+        if (Hitpoints <= 0)
+        {
+            InterfaceManager.instance.DeathScreen();
+        }
+    }
+
+    public void HealthDown()
+    {
+        // zorgt er voor dat de health naar beneden kan worden gehaald
+        ModifyHealth(-1);
     }
 }

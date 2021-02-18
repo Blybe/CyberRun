@@ -7,8 +7,11 @@ public class Obstacle : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        InterfaceManager.instance.DeathScreen();
-        Debug.Log("Ik pak damage");
+        if (collision.gameObject.GetComponent<SimpleMovement>())
+        {
+            // zorgt er voor dat je damage neemt na dat je een obstacle raakt
+            SimpleMovement.instance.HealthDown();
+        }
     }
 
 }

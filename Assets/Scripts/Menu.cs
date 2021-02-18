@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    // dit is een simpel script om het menu te laten werken
+
     public static Menu instance;
 
     private void Awake()
