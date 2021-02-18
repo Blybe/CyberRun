@@ -8,6 +8,7 @@ public class Obstacle : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         InterfaceManager.instance.DeathScreen();
+        Debug.Log("Ik pak damage");
     }
 
 }

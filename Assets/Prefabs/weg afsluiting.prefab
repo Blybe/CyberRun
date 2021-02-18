@@ -172,6 +172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5856617201149031303}
   - component: {fileID: 2160355607326704181}
+  - component: {fileID: 6231353553166512696}
   m_Layer: 0
   m_Name: weg afsluiting
   m_TagString: Untagged
@@ -208,3 +209,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 222.69707, y: 100, z: 10.668936}
   m_Center: {x: 0.40444133, y: 0, z: 1.1582396}
+--- !u!114 &6231353553166512696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6488898696181082429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73af7d392b2dbbf4c851c5267d3d39f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
