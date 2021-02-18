@@ -47,6 +47,6 @@ public class InterfaceManager : MonoBehaviour
 
     public void GoToMenu()
     {
-        SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene("StartScene");
     }
 }
