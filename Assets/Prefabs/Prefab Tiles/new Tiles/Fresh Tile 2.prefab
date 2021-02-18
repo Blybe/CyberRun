@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 151858217317708297}
+  - component: {fileID: -5822942032281834448}
   m_Layer: 0
   m_Name: Fresh Tile 2
   m_TagString: Untagged
@@ -56,6 +57,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5822942032281834448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151858217317708298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2d9378845ee5764f9bdbc05d27767ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  snapLocation: -19
 --- !u!1 &8591682829733025203
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,8 +131,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12.05914, y: 20.801712, z: 11.706381}
-  m_Center: {x: -5.746742, y: 2.819044, z: 0.14680958}
+  m_Size: {x: 12.05914, y: 21.267834, z: 11.706381}
+  m_Center: {x: -5.746742, y: 6.7601647, z: 0.14680958}
 --- !u!1001 &151858216753988607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -209,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2952606497964754704, guid: 57a891a3bfb9905418a2fa2997daeceb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.58
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 2952606497964754704, guid: 57a891a3bfb9905418a2fa2997daeceb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -447,6 +462,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 151858217317708297}
     m_Modifications:
+    - target: {fileID: 3301114583194495153, guid: e4c6910ec85f32e46a019be253367a32, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8362072
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301114583194495153, guid: e4c6910ec85f32e46a019be253367a32, type: 3}
+      propertyPath: m_Center.y
+      value: 0.31873193
+      objectReference: {fileID: 0}
     - target: {fileID: 8245622205040065105, guid: e4c6910ec85f32e46a019be253367a32, type: 3}
       propertyPath: m_Name
       value: Tileable Floor 1

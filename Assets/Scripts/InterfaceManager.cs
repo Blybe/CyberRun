@@ -11,8 +11,10 @@ public class InterfaceManager : MonoBehaviour
     [SerializeField] GameObject Deathscreenpanel;
 
     public TextMeshProUGUI ScoreUI;
+    public TextMeshProUGUI CoinsUI;
 
-    public int Score;
+    public float Score;
+    public int Coins;
 
     private void Awake()
     {
@@ -22,9 +24,12 @@ public class InterfaceManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         Score = ScoreManager.instance.Score;
+        Coins = CoinsManager.instance.Coins;
 
         ScoreUI.text = "Score:" + Score;
+        CoinsUI.text = "Coins:" + Coins;
     }
 
     public void DeathScreen()

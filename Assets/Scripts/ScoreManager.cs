@@ -7,14 +7,18 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
 
-    public int Score;
+    public float Score;
 
     private void Awake()
     {
         instance = this;
     }
 
-    public void IncreaseScore(int amount)
+    private void Update()
+    {
+        IncreaseScore(3 * Time.deltaTime);
+    }
+    public void IncreaseScore(float amount)
     {
         Score += amount;
     }

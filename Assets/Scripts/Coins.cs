@@ -6,7 +6,7 @@ public class Coins : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        ScoreManager.instance.IncreaseScore(1);
+        CoinsManager.instance.IncreaseCoins(1);
         Destroy(gameObject);
     }
 }
