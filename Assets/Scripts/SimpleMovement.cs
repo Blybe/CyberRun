@@ -53,4 +53,11 @@ public class SimpleMovement : MonoBehaviour
         m_IsGrounded = true;
         animator.ResetTrigger("IsJumping");
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("SpeedBoost"))
+        {
+            TileSpeed.instance.ActivateSpeedBoost();
+        }
+    }
 }

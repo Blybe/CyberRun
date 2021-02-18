@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class TileMover : MonoBehaviour
 {
-    [SerializeField] public float speed = 15f;
+    public float speed = 8f;
     [SerializeField] private float snapLocation;
+
+    private void Start()
+    {
+        TileSpeed.instance.changeSpeed += ChangeSpeed;
+    }
     private void Update()
     {  
         transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
@@ -13,5 +18,10 @@ public class TileMover : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void ChangeSpeed(float _speed)
+    {
+        speed = _speed;
     }
 }
