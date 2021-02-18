@@ -17,6 +17,7 @@ public class SpeedItem : MonoBehaviour
 
     IEnumerator TempSpeedBoost(TileMover mover)
     {
+        Debug.Log("Jo Knakker hij werkt");
         mover.speed *= m_SpeedMulitplier;
         yield return new WaitForSeconds(m_SpeedTimer);
         mover.speed /= m_SpeedMulitplier;
