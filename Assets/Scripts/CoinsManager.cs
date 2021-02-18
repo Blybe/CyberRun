@@ -5,6 +5,7 @@ using TMPro;
 
 public class CoinsManager : MonoBehaviour
 {
+    // Dit is de Coinsmanager die Zorgt ervoor dat de Coins op de UI worden geupdate
     public static CoinsManager instance;
 
     public int Coins;

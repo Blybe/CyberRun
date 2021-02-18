@@ -24,7 +24,7 @@ public class InterfaceManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Hier worden alle UI in de Game geupdate op basis van hoe veel coins je hebt en hoeveel score
         Score = ScoreManager.instance.Score;
         Coins = CoinsManager.instance.Coins;
 
@@ -32,6 +32,7 @@ public class InterfaceManager : MonoBehaviour
         CoinsUI.text = "Coins:" + Coins;
     }
 
+    //Dit is om de Buttons te Assignen voor de Mogelijke dingen die de Buttons kunnen doen
     public void DeathScreen()
     {
         Deathscreenpanel.SetActive(true);

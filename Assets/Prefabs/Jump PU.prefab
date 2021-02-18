@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_JumpMultiplier: 2
-  m_JumpTimer: 4
+  m_JumpTimer: 2
 --- !u!65 &2054502195387755439
 BoxCollider:
   m_ObjectHideFlags: 0

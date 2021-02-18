@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
+    //Score die worden hier doorgegeven aan de ScoreManager om vervolgens op de UI te verschijnen
     public static Score instance;
     private void Awake()
     {

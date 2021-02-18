@@ -5,6 +5,7 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
+    //Dit is de ScoreManager die zorgt ervoor dat de Score word geupdate
     public static ScoreManager instance;
 
     public float Score;

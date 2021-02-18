@@ -53,6 +53,7 @@ public class SimpleMovement : MonoBehaviour
         m_IsGrounded = true;
         animator.ResetTrigger("IsJumping");
     }
+    // Dit Zorgt ervoor dat hij de SpeedBoost Item kan zien en dan dus het hele process van een speedboost kan activeren
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("SpeedBoost"))

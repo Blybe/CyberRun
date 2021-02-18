@@ -13,6 +13,7 @@ public class TileMover : MonoBehaviour
     }
     private void Update()
     {  
+        //Dit verplaats het hele process richting de speler
         transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
         if (transform.position.x <= snapLocation)
         {
